@@ -10,7 +10,6 @@ const CountriesList = () => {
   if (loading) {
     return <Loading />;
   }
-
   return (
     <section className="section">
       {countries
@@ -33,10 +32,11 @@ const CountriesList = () => {
           return <Countries key={index} {...item} />;
         })}
         
-{
-    
 
-}
+        {countries.length < 1 ? null : (
+        <h2 style={{color:'white'}}>No items matched the filter.</h2>
+      )}
+ 
         
     </section>
   );

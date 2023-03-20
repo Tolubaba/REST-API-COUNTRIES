@@ -86,7 +86,6 @@ console.log(error)
           <input
             ref={searchvalue}
             placeholder="search for your country"
-            on
             onChange={searchcountry}
           />
         </div>

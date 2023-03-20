@@ -100,7 +100,7 @@ const Singlecountry = () => {
                       </div>
                       <div className="lists">
                         {" "}
-                        <h4> Currencies: </h4> <span>{currencies[0].name}</span>{" "}
+                        <h4> Currencies: </h4> <span>{currencies? currencies[0].name:null}</span>{" "}
                       </div>
                       <div className="lists">
                         {" "}
